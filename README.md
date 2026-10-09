@@ -1,2 +1,2 @@
-# My Portofilio 
-selamat 
+-Repository Github: https://github.com/Dinceadriana/MyPortoolio
+-Link Demo Deployment :https://lovely-sunburst-bd608d.netlify.app/
