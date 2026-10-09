@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio pribadi - Slicing Website HTML, CSS, JavaScript" />
+  <title>Portfolio | Dince Adriana Anum </title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="logo">dinceadriana<span></span></a>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home" class="nav-link">Beranda</a></li>
+        <li><a href="#about" class="nav-link">Tentang</a></li>
+        <li><a href="#skills" class="nav-link">Skill</a></li>
+        <li><a href="#projects" class="nav-link">Proyek</a></li>
+        <li><a href="#contact" class="nav-link">Kontak</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="theme-toggle" aria-label="Ganti tema">🌙</button>
+        <button class="icon-btn nav-toggle" id="nav-toggle" aria-label="Buka menu" aria-expanded="false">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-text reveal">
+          <p class="eyebrow">Halo semua, saya</p>
+          <h1>Dince Adriana Anum </h1>
+          <h2 class="typing"><span id="typing-text"></span><span class="cursor">|</span></h2>
+          <p class="lead"> Portofolio ini menampilkan proyek dan kontribusi saya sebagai mahasiswa yang mengembangkan skil di bidang teknologi
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">Lihat Proyek</a>
+            <a href="#contact" class="btn btn-outline">Hubungi Saya</a>
+          </div>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="avatar">
+            <img src="dince.jpg" alt="Foto ptofil Dince Adriana Anum" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%; "
+          ></div>
+          <div class="blob blob-1"></div>
+          <div class="blob blob-2"></div>
+        </div>
+      </div>
+    </section>
+
+  
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title reveal">Tentang Saya</h2>
+        <div class="about-grid">
+          <p class="reveal">
+            Saya sedang belajar pengembangan web dengan fokus pada HTML, CSS, dan JavaScript.
+            Saya senang mengubah desain menjadi halaman web yang nyata (slicing) dan memastikan
+            tampilannya enak di semua ukuran layar.
+          </p>
+          <ul class="stats reveal">
+            <li><strong data-count="12">0</strong><span>Proyek</span></li>
+            <li><strong data-count="3">0</strong><span>Tahun Belajar</span></li>
+            <li><strong data-count="8">0</strong><span>Sertifikat</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="skills">
+      <div class="container">
+        <h2 class="section-title reveal">Skill</h2>
+        <div class="skills-grid">
+          <div class="skill reveal">
+            <div class="skill-head"><span>HTML</span><span>60%</span></div>
+            <div class="bar"><div class="bar-fill" data-width="60"></div></div>
+          </div>
+          <div class="skill reveal">
+            <div class="skill-head"><span>CSS</span><span>60%</span></div>
+            <div class="bar"><div class="bar-fill" data-width="60"></div></div>
+          </div>
+          <div class="skill reveal">
+            <div class="skill-head"><span>JavaScript</span><span>50%</span></div>
+            <div class="bar"><div class="bar-fill" data-width="50"></div></div>
+          </div>
+          <div class="skill reveal">
+            <div class="skill-head"><span>Git &amp; GitHub</span><span>50%</span></div>
+            <div class="bar"><div class="bar-fill" data-width="50"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section-title reveal">Proyek</h2>
+
+        <div class="filters reveal" id="filters">
+          <button class="filter active" data-filter="all">Semua</button>
+          <button class="filter" data-filter="web">Web</button>
+          <button class="filter" data-filter="ui">UI Slicing</button>
+          <button class="filter" data-filter="js">JavaScript</button>
+        </div>
+
+        <div class="cards" id="cards">
+          <article class="card reveal" data-category="web">
+            <div class="thumb t1"></div>
+            <div class="card-body">
+              <h3>Landing Page wisata</h3>
+              <p>Halaman promosi wisata dengan layout grid dan menu responsif.</p>
+              <span class="tag">Web</span>
+            </div>
+          </article>
+          <article class="card reveal" data-category="ui">
+            <div class="thumb t2"></div>
+            <div class="card-body">
+              <h3>Slicing Dashboard</h3>
+              <p>Slicing UI dashboard admin dari desain Figma ke HTML dan CSS.</p>
+              <span class="tag">UI Slicing</span>
+            </div>
+          </article>
+          <article class="card reveal" data-category="js">
+            <div class="thumb t3"></div>
+            <div class="card-body">
+              <h3>Aplikasi To-Do</h3>
+              <p>Tambah, hapus, dan tandai tugas memakai manipulasi DOM.</p>
+              <span class="tag">JavaScript</span>
+            </div>
+          </article>
+          <article class="card reveal" data-category="ui">
+            <div class="thumb t4"></div>
+            <div class="card-body">
+              <h3>Clone Gojek</h3>
+              <p>Tampilan beranda aplikasi ber-layout mobile-first.</p>
+              <span class="tag">UI Slicing</span>
+            </div>
+          </article>
+          <article class="card reveal" data-category="web">
+            <div class="thumb t5"></div>
+            <div class="card-body">
+              <h3>Website Organisasi</h3>
+              <p>Website profil organisasi kampus dengan beberapa halaman.</p>
+              <span class="tag">Web</span>
+            </div>
+          </article>
+          <article class="card reveal" data-category="js">
+            <div class="thumb t6"></div>
+            <div class="card-body">
+              <h3>Kalkulator</h3>
+              <p>Kalkulator sederhana dengan event listener dan validasi input.</p>
+              <span class="tag">JavaScript</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="contact">
+      <div class="container contact-wrap">
+        <h2 class="section-title reveal">Kontak</h2>
+        <form class="form reveal" id="contact-form" novalidate>
+          <div class="field">
+            <label for="name">Nama</label>
+            <input type="text" id="name" name="name" placeholder="Nama lengkap" />
+            <small class="error" id="name-error"></small>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="nama@email.com" />
+            <small class="error" id="email-error"></small>
+          </div>
+          <div class="field">
+            <label for="message">Pesan</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tulis pesan kamu..."></textarea>
+            <small class="error" id="message-error"></small>
+          </div>
+          <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+          <p class="form-success" id="form-success" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Dince . Tugas Website  my Portofolio.</p>
+      <div class="socials">
+        <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" id="to-top" aria-label="Kembali ke atas">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>1
